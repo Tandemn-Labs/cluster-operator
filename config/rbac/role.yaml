@@ -1,0 +1,32 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - planner.tandemn.com
+  resources:
+  - clusterplans
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - planner.tandemn.com
+  resources:
+  - clusterplans/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - planner.tandemn.com
+  resources:
+  - clusterplans/status
+  verbs:
+  - get
+  - patch
+  - update

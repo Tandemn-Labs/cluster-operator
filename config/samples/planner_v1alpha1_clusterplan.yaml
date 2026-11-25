@@ -1,0 +1,9 @@
+apiVersion: planner.tandemn.com/v1alpha1
+kind: ClusterPlan
+metadata:
+  labels:
+    app.kubernetes.io/name: cluster-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: clusterplan-sample
+spec:
+  # TODO(user): Add fields here

@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- planner_v1alpha1_clusterplan.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
